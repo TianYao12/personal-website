@@ -70,7 +70,8 @@ export default function Intro() {
         </Link>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
-        focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+        focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer 
+        borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/tian-yao-aa3708271/"
           target="_blank"
         >
@@ -78,7 +79,8 @@ export default function Intro() {
         </a>
         <a
           className="bg-white p-4 text-gray-700 text-[1.35rem] flex items-center gap-2 rounded-full
-          focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 
+          transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/TianYao12"
           target="_blank"
         >

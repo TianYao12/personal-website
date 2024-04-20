@@ -29,24 +29,25 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="tet-gray-700 -mt-6">
+      <p className="tet-gray-700 -mt-6 dark:text-white/80">
         Contact me at{" "}
         <a href="mailto: xtyao2015@gmail.com">xtyao2015@gmail.com</a> or through
         this form
       </p>
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
           if (error) {
-            toast.error(error)
+            toast.error(error);
             return;
           }
-          toast.success("Email sent successfully! :)")
+          toast.success("Email sent successfully! :)");
         }}
       >
         <input
-          className="h-14 rounded-lg borderBlack p-4"
+          className="h-14 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80
+          dark:focus:bg-opacity-100 transition-all dark:outlint-none"
           name="senderEmail"
           placeholder="Email"
           type="email"
@@ -54,7 +55,8 @@ const Contact = () => {
           maxLength={500}
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80
+          dark:focus:bg-opacity-100 transition-all dark:outlint-none"
           name="message"
           placeholder="Message:"
           required

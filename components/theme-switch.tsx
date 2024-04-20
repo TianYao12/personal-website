@@ -1,21 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import { useTheme } from "@/context/theme-context";
+import React, { useEffect, useState } from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
 
 export default function ThemeSwitch() {
-  const [theme, setTheme] = useState<Theme>("light");
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      window.localStorage.setItem("theme", "dark");
-    } else {
-      setTheme("light");
-      window.localStorage.setItem("theme", "light")
-    }
-  };
-
+  const { theme, toggleTheme } = useTheme();
   return (
     <button
       className="fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-80 
