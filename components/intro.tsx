@@ -70,7 +70,7 @@ export default function Intro() {
         </Link>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
-        focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+        focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
           href="https://www.linkedin.com/in/tian-yao-aa3708271/"
           target="_blank"
         >
