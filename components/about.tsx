@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
+import highlights from "@/public/nba.jpg";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -11,7 +12,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[46rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -19,27 +20,23 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After exploring my interests in high school, I decided to pursue my
-        passion for math and programming.
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem, and actually
-        apply my skills to solve real-world issues.
+        I decided to study Computer Science because of my passion for{" "}
+        <span className="italic">problem solving</span>. I love math and
+        programming, not only for the satisfaction of solving a problem or
+        seeing a program work on first try (never happens LOL), but also for
+        their limitless potential to solve real-world problems. I am always
+        looking to connect with like-minded peers and professionals, so feel
+        free to reach out!
       </p>
 
-      <p className="mb-3">
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        various sports, whether it is basketball, badminton, or soccer.
-        Throughout high school, I was on my school's varsity team and even won a
-        bronze metal at OFSAA Provincials for badminton!
+      <p className="mb-10">
+        In my free time, I enjoy playing/watching sports, reading, or playing
+        piano. In high school, I was on my school's varsity basketball, soccer,
+        and badminton team and placed 3rd at OFSAA Provincials for badminton!
+        Here's a short 20 second video of some basketball "highlights" (I barely
+        got any on video, and excuse the filmed on a potato quality LOL)
       </p>
-
-      <p>
-        I am always looking to connect with like-minded peers and professionals
-        who are passionate about technology and innovation. Whether it’s
-        discussing the latest tech trends, brainstorming on a potential project,
-        or hitting the court for a friendly game, feel free to reach out!
-      </p>
+      <video className="rounded" src="highlights.mp4" controls></video>
     </motion.section>
   );
 }

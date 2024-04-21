@@ -77,6 +77,7 @@ export const projectsData = [
       `Displays NBA player statistics, interactive charts, and news`,
     tags: ["TypeScript", "React.js", "Next.js", "MongoDB", "Python", "CSS"],
     imageUrl: nba,
+    githubUrl: "https://github.com/TianYao12/nba"
   },
   {
     title: "RAG Book Recommender",
@@ -84,6 +85,7 @@ export const projectsData = [
       `A search engine that compares user prompts to web-scapped Goodreads data stored as vector embeddings`,
     tags: ["Python", "LangChain", "Hugging Face", "Streamlit"],
     imageUrl: book,
+    githubUrl: "https://github.com/TianYao12/Book-Recommender"
   },
   {
     title: "Doctor-Patient Dashboard",
@@ -92,6 +94,7 @@ export const projectsData = [
        API and doctors prescribe medications`,
     tags: ["JavaScript", "React.js", "Express.js", "PostgreSQL", "AWS (Lambda, API Gateway)", "Docker", "FastAPI", "CSS"],
     imageUrl: med,
+    githubUrl: "https://github.com/TianYao12/Doctor-Patient-Dashboard"
   },
   {
     title: "Video Streaming Studio",
@@ -99,6 +102,7 @@ export const projectsData = [
      `A web app where all users can watch videos and authenticated users can upload videos`,
     tags: ["JavaScript", "React.js", "Express.js", "MongoDB", "AWS (S3, Cloudfront)", "TailwindCSS"],
     imageUrl: netflix,
+    githubUrl: "https://github.com/TianYao12/Video-Streaming-Studio"
   },
 ] as const;
 

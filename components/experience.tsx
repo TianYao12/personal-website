@@ -23,7 +23,7 @@ export default function Experience() {
               visible={true}
               contentStyle={{
                 background:
-                  theme === "light" ? "#f3f4f6" : "rgba(255,255,255,0.05)",
+                  theme === "light" ? "#e5e7eb" : "rgba(255,255,255,0.05)",
                 boxShadow: "none",
                 border: "1px sold rgba(0,0,0,0.05)",
                 padding: "1.3rem 2rem",
@@ -43,7 +43,9 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

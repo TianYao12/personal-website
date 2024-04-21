@@ -2,9 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
+import face from "@/public/face.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/app/lib/hooks";
@@ -30,25 +30,25 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://i.ebayimg.com/images/g/CU8AAOSw6SBgullZ/s-l1200.webp"
+              src={face}
               width="192"
               height="192"
               quality="95"
               priority={true}
               alt="Tian Yao"
-              className="h-24 w-24 rounded-full object-cover shadow-xl border-[0.35rem] border-white"
+              className="h-48 w-48 rounded-full object-cover shadow-xl border-[0.35rem] border-white"
             />
           </motion.div>
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I'm Tian, and I'm a <span className="font-bold">CS student</span>{" "}
-        at the <span className="font-bold">University of Waterloo </span>
-        with an interest in full-stack development and data science
+        Hello, I'm Tian. I'm a <span className="font-bold">CS student</span> at
+        the <span className="font-bold">University of Waterloo </span>
+        interested in fullstack development and data science
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -65,8 +65,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover: translate-x-1 transition" />
+          Contact Me
         </Link>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
