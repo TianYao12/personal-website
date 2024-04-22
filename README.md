@@ -1,5 +1,5 @@
-Built with TypeScript, React/Next.js, and TailwindCSS
-Used Context API for state management and Framer Motion for effects
+**Built with TypeScript, React/Next.js, and TailwindCSS
+Used Context API for state management and Framer Motion for effects**
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
