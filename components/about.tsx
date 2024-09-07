@@ -34,7 +34,7 @@ export default function About() {
         piano. In high school, I was on my school's varsity basketball, soccer,
         and badminton team and placed 3rd at OFSAA Provincials for badminton!
         Here's a short 20 second video of some basketball "highlights" (I barely
-        got any on video, and excuse the filmed on a potato quality LOL)
+        got any on video, and excuse the film quality LOL)
       </p>
       <video className="rounded" src="highlights.mp4" controls></video>
     </motion.section>

@@ -7,10 +7,7 @@ const nextConfig = {
         hostname: "i.ebayimg.com",
       },
     ],
-  },
-  experimental: {
-    serverActions: true,
-  },
+  }
 };
 
 module.exports = nextConfig;
